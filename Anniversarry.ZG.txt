@@ -1,0 +1,32 @@
+import time 
+import sys
+
+# Fungsi untuk animasi mengetik
+def typing_effect(text, delay=0.1):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()
+
+# Pesan romantis
+message ="""
+Dear Zayid,
+
+Empat tahun sudah berlalu dan setiap 
+detik bersamamu adalah anugrah terindah dalam hidupku
+Kamu adalah rumahku, tempat hatiku merasa tenang dan bahagia.
+Terimakasih telah mencintaiku dengan begitu tulus, mengisi 
+hari-hariku dengan tawa dan kebahagiaan.
+
+Selamat ulang tahun ke-4 untuk cinta kita.
+Aku berjanji untuk selalu mencintaimu, menjaga hatimu 
+dan berjalan bersamamu dalam setiap langkah kehidupan.
+
+With all my heart,
+[Gescha Ramadhany Qolby]
+"""
+
+# Menampilkan pesan dengan efek mengetik
+typing_effect(message, 0.05)
+
